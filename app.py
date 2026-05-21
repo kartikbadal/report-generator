@@ -1,18 +1,11 @@
 import streamlit as st
 import logging
 import os
-from modules import(
-    load_file,
-    clean_data,
-    get_summary,
-    save_bar_chart,
-    save_line_chart,
-    save_correlation_heatmap,
-    generate_pdf,
-    send_report,
-    get_usd_to_inr
-)
-
+from modules.data_processor import load_file, clean_data, get_summary
+from modules.chart_generator import save_bar_chart, save_line_chart, save_correlation_heatmap
+from modules.pdf_generator import generate_pdf
+from modules.email_sender import send_report
+from modules.scraper import get_usd_to_inr
 # Configure logging for entire app
 
 logging.basicConfig(
