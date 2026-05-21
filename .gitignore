@@ -8,3 +8,14 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Secrets
+.env
+
+# Generated Output
+
+output/
+
+#Sample Data
+sample_data.csv
+
